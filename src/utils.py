@@ -1,0 +1,1 @@
+## here i am writing common code which can be used in other files also for this i am making a file utils.py and writing the code in it
