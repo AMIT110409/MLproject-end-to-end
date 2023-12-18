@@ -1,0 +1,5 @@
+pandas
+numpy
+seaborn
+matplotlib
+#-e .    ## this will automatically trigger setup.py for you(but it will create some problem so now wecan chekc it later. .
