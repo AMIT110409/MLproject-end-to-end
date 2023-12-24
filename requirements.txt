@@ -2,4 +2,9 @@ pandas
 numpy
 seaborn
 matplotlib
+scikit-learn
+catboost
+xgboost
+Flask
+
 #-e .    ## this will automatically trigger setup.py for you(but it will create some problem so now wecan chekc it later. .

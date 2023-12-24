@@ -1,6 +1,8 @@
 import sys #sys module  provide access to some variables used or maintained by the interpreter and to functions that interact strongly with the interpreter.
 import logging # we import logging here because we want to use it in our logger class
 
+##from src.logger import logging   ## it is not working this line so we need to check why logss file are not created for exception.py 
+
 def error_message_detail(error,error_detail:sys):
     _,_,exc_tb = error_detail.exc_info() #exc_info() method returns a tuple of three values that give information about the exception that is currently being handled.
     file_name=exc_tb.tb_frame.f_code.co_filename #co_filename is the filename from which the code was compiled
