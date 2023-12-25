@@ -12,6 +12,8 @@ from dataclasses import dataclass
 from src.components.data_transformation import DataTransformation   ## this line we write because we want to use the class DataTransformation which is present in the file data_transformation.py and we want to use it in this file so we need to import it here
 from src.components.data_transformation import DataTransformationConfig
 
+from src.components.model_trainer import ModelTrainerConfig
+from src.components.model_trainer import ModelTrainer
 @dataclass ### it is a decorater which takes a class and adds some functionality to it and with the help of this we can define class variable in it and can access it anywhere if we donot use it then we have to override the init method and then we can define class variable in it.
 class DataIngestionConfig: 
     train_data_path = os.path.join('artifcats',"train.csv") # path to train data
@@ -59,7 +61,7 @@ if __name__ == '__main__':
     data_transformation=DataTransformation()
     train_arr,test_arr,_=data_transformation.initiate_data_transformation(train_data,test_data)
 
-    # modeltrainer=ModelTrainer()
-    # print(modeltrainer.initiate_model_trainer(train_arr,test_arr))
+    modeltrainer=ModelTrainer()
+    print(modeltrainer.initiate_model_trainer(train_arr,test_arr))
        
     
